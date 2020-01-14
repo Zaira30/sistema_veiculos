@@ -29,15 +29,15 @@
 @section('content')
 
     <div class="container-fluid">
-        {!! Form::model($marca, [
+        {!! Form::model($veiculo, [
              'method' => 'PATCH',
-             'url' => ['/marcas', $marca->a004_id_marca],
+             'url' => ['/veiculos', $veiculo->id],
              'data-toggle' => 'validator',
              'class' => 'form',
              'files' => true
          ]) !!}
 
-        @include ('marcas.form', ['submitButtonText' => 'Salvar'])
+        @include ('veiculos.form', ['submitButtonText' => 'Salvar'])
 
         {!! Form::close() !!}
 

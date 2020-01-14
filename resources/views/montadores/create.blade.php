@@ -7,16 +7,16 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0 text-dark">Marcas</h1>
+                    <h1 class="m-0 text-dark">Montadores</h1>
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Marcas</a></li>
+                        <li class="breadcrumb-item"><a href="#">Montadores</a></li>
                         <li class="breadcrumb-item active">Criar Novo</li>
                     </ol>
                 </div><!-- /.col -->
 
                 <div class="col-sm-6">
                     <div class="breadcrumb float-sm-right">
-                        <a href="/marcas" class="btn btn-block btn-outline-secondary btn-sm">VOLTAR</a>
+                        <a href="/montadores" class="btn btn-block btn-outline-secondary btn-sm">VOLTAR</a>
                     </div>
                 </div><!-- /.col -->
 
@@ -29,8 +29,8 @@
 @section('content')
 
     <div class="container-fluid">
-        {!! Form::open(['url' => '/marcas/create',  'data-toggle' => 'validator', 'files' => true, 'class' => 'form']) !!}
-            @include ('marcas.form')
+        {!! Form::open(['url' => '/montadores/create',  'data-toggle' => 'validator', 'files' => true, 'class' => 'form']) !!}
+            @include ('montadores.form')
         {!! Form::close() !!}
 
     </div>

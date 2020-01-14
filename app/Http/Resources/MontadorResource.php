@@ -7,9 +7,16 @@
  */
 
 namespace App\Http\Resources;
+use Illuminate\Http\Resources\Json\Resource;
 
-
-class MontadorResource
+class MontadorResource extends Resource
 {
-
+    public function toArray($request)
+    {
+        return [
+            'id' => $this->id,
+            'nome' => $this->nome,
+            'status'  => ($this->status == 1)? 'Ativo': 'inativo',
+        ];
+    }
 }

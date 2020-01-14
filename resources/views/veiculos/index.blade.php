@@ -7,16 +7,14 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0 text-dark">Marcas</h1>
+                    <h1 class="m-0 text-dark">Veículos</h1>
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item active">Marcas</li>
+                        <li class="breadcrumb-item active">Veículos</li>
                     </ol>
                 </div><!-- /.col -->
                 <div class="col-sm-6">
                     <div class="breadcrumb float-sm-right">
-                        @if(Auth::user()->can('create-parâmetros'))
-                            <a href="/marcas/create" class="btn btn-block btn-primary">CRIAR NOVO</a>
-                        @endif
+                            <a href="/veiculos/create" class="btn btn-block btn-primary">CRIAR NOVO</a>
                     </div>
                 </div><!-- /.col -->
 
@@ -31,7 +29,7 @@
         <div class="col-12">
             <div class="card card-primary">
                 <div class="card-header">
-                    <h3 class="card-title">Marcas</h3>
+                    <h3 class="card-title">Veículos</h3>
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
@@ -39,7 +37,10 @@
                         <div class="box-body">
                             <table class="table table-striped table-bordered table-hover" width="100%" id="datatable-table">
                                 <thead>
-                                <th>Descrição</th>
+                                <th>Modelo</th>
+                                <th>Montador</th>
+                                <th>Ano de Fabricação</th>
+                                <th>Ano Modelo </th>
                                 <th>Status</th>
                                 <th width="80px">Ações</th>
                                 </thead>
@@ -71,7 +72,7 @@
                     'excel', 'print'
                 ],
                 "ajax": {
-                    url: '{!! route('marcas.data') !!}',
+                    url: '{!! route('veiculos.data') !!}',
                     headers: {'X-CSRF-TOKEN': '{{ csrf_token() }}' },
                     dataType: 'JSON',
                     type: 'GET',
@@ -84,8 +85,11 @@
                     },
                 },
                 columns: [
-                    { data: 'a004_descricao', name: 'a004_descricao' },
-                    { data: 'a004_status', name: 'a004_status' },
+                    { data: 'nome', name: 'nome' },
+                    { data: 'montador.nome', name: 'montador.nome' },
+                    { data: 'ano_fabricacao', name: 'ano_fabricacao' },
+                    { data: 'ano_modelo', name: 'ano_modelo' },
+                    { data: 'status', name: 'status' },
                     { data: 'action', name: 'action' }
                 ],
                 "language": { "url": "/vendor/datatables/lang/pt-BR.json" }

@@ -8,8 +8,24 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Model;
 
-class Montador
+
+class Montador extends  Model
 {
+    protected $table = 'montadores';
+
+    protected $primaryKey = "id";
+
+    protected $fillable = [
+        'nome',
+        'status'
+    ];
+
+
+    public function Veiculo()
+    {
+        return $this->hasMany('App\Models\Veiculo', 'montador_id', 'id');
+    }
 
 }

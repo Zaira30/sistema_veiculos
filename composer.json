@@ -10,13 +10,15 @@
     "require": {
         "php": "^7.2",
         "fideloper/proxy": "^4.0",
+        "gghughunishvili/entrust": "^2.0",
         "jeroennoten/laravel-adminlte": "^3.0",
         "laravel/framework": "^6.2",
         "laravel/helpers": "^1.1",
         "laravel/tinker": "^1.0",
         "laravelcollective/html": "~6.0",
+        "nwidart/laravel-modules": "^6.2",
         "yajra/laravel-datatables-oracle": "~9.0",
-        "gghughunishvili/entrust": "^2.0"
+        "dompdf/dompdf": "^0.8"
     },
     "require-dev": {
         "facade/ignition": "^1.4",
@@ -37,7 +39,8 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "app/"
+            "App\\": "app/",
+            "Modules\\": "Modules/"
         },
         "classmap": [
             "database/seeds",

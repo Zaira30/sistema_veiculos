@@ -92,21 +92,6 @@
                 ],
                 "language": { "url": "/vendor/datatables/lang/pt-BR.json" }
                 //  ,order: [ [1, 'asc'] ]
-                ,'drawCallback' : function( settings ) {
-                    if($(".JpesquisarDataTable").length<=0)
-                    {
-                        $(".dataTables_filter").html("");
-                        $(".dataTables_filter").html("<label>Pesquisar<input class=\"form-control JpesquisarDataTable input-sm\" placeholder=\"\"  type=\"text\"></label>");
-
-                        $(".JpesquisarDataTable").keyup(function(x){
-                            if( $(".JpesquisarDataTable").val().length>=3 || $(".JpesquisarDataTable").val().length<=0)
-                            {
-                                datatable.draw();
-                            }
-                        })
-                    }
-                }
-
             });
 
         });

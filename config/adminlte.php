@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'title' => 'TOBLU',
+    'title' => 'MYPHARMA 2GO',
     'title_prefix' => '',
     'title_postfix' => '',
 
@@ -30,12 +30,12 @@ return [
     |
     */
 
-    'logo' => '<b>Sistema Veiculos</b>',
+    'logo' => '<b>MYPHARMA 2GO</b>',
     'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
     'logo_img_class' => 'brand-image-xl',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
-    'logo_img_alt' => 'TOBLU',
+    'logo_img_alt' => 'MYPHARMA 2GO',
 
     /*
     |--------------------------------------------------------------------------

@@ -29,7 +29,7 @@ class CadastroSenha extends Mailable
      */
     public function build()
     {
-        return $this->from('contato@esfera.com.br')
+        return $this->from('contato@mypharma2go.com')
             ->markdown('emails.cadastrosenha')->with([
                 'user' => $this->user,
             ]);

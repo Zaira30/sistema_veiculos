@@ -1,0 +1,13 @@
+{
+    "name": "Budget",
+    "alias": "budget",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Budget\\Providers\\BudgetServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

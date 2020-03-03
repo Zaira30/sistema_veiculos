@@ -28,6 +28,10 @@ Route::group(['middleware' => 'auth'], function () {
         return view('home');
     })->name('home');
 
+    Route::get('/user', function() {
+        return view('user');
+    })->name('user');
+
     //usuarios
     Route::get('/usuarios', ['uses' => 'UsuarioController@index'])->name('usuarios');
     Route::get('/usuarios/create', ['uses' => 'UsuarioController@create']);

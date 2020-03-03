@@ -1,0 +1,13 @@
+{
+    "name": "Routine",
+    "alias": "routine",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Routine\\Providers\\RoutineServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

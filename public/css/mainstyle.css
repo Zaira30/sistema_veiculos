@@ -1,0 +1,69 @@
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #3b9182;
+    border-radius: .25rem;
+    box-shadow: inset 0 0 0 transparent;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.card-primary:not(.card-outline) .card-header {
+    background-color: #3b9182;
+}
+
+.img-bloco {
+    background-image: none;
+    border: 1px solid #3b9182 !important;
+    border-radius: 3px !important;
+}
+
+.btn-mypharma {
+    color: #fff;
+    background-color: #3b9182;
+    border-color: #3b9182;
+    box-shadow: none;
+}
+
+a, span {
+    color: #3b9182;
+}
+.control-label{
+    color: #3b9182;
+}
+
+[class*=sidebar-dark-] {
+    background-color: #114156;
+}
+
+.sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active, .sidebar-light-primary .nav-sidebar>.nav-item>.nav-link.active {
+    background-color: #3b9182;
+    color: #fff;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #3b9182;
+    border-color: #3b9182;
+}
+
+.table th {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #114156;
+    background-color: transparent;
+}
+
+.card {
+    box-shadow: 0 0 4px  #3b9182;
+    margin-bottom: 1rem;
+}
+

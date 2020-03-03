@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sistema Veiculos</title>
+    <title>MYPHARMA 2GO</title>
     @if(! config('adminlte.enabled_laravel_mix'))
     <link rel="stylesheet" href="{{ asset('vendor/fontawesome-free/css/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('vendor/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
@@ -14,6 +14,7 @@
     @yield('adminlte_css_pre')
 
     <link rel="stylesheet" href="{{ asset('vendor/adminlte/dist/css/adminlte.min.css') }}">
+
 {{--    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">--}}
 
     <link  href="{{ asset('/vendor/datatables/css/dataTables.bootstrap4.min.css') }}" rel="stylesheet">
@@ -30,6 +31,11 @@
     <link rel="stylesheet" href="{{ asset("/vendor/jquery-image/src/image-uploader.css")}}">
 
     <link  href="{{ asset('vendor/bootstrap4-duallistbox/bootstrap-duallistbox.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset("/vendor/summernote/summernote-lite.css")}}">
+
+
+    <!-- Personalizado -->
+    <link rel="stylesheet" href="{{ asset('css/mainstyle.css') }}">
 
     <style>
         .ui-datepicker {
@@ -37,12 +43,12 @@
             padding: .2em .2em 0;
         }
 
-        .img-bloco{
+        .img-bloco {
             background-image: none;
-            border: 1px solid #CCCCCC !important;
+            border: 1px solid #3b9182 !important;
             border-radius: 3px !important;
-
         }
+
 
         #image-preview {
             width:300px;

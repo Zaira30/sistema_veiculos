@@ -1,0 +1,9 @@
+{
+    "Products": true,
+    "Store": true,
+    "Parameters": true,
+    "Budget": true,
+    "Routine": true,
+    "Profile": true,
+    "User": true
+}

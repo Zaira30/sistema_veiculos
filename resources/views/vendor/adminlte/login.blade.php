@@ -5,7 +5,8 @@
 @stop
 
 @section('adminlte_css')
-    @stack('css')
+
+    <link rel="stylesheet" href="{{ asset('vendor/adminlte/css/auth.css') }}">
     @yield('css')
 @stop
 
@@ -31,7 +32,7 @@
 @section('body')
     <div class="login-box">
         <div class="login-logo">
-          {{--  <a href="{{ $dashboard_url }}">{!! config('adminlte.logo', '<b>Admin</b>LTE') !!}</a>--}}
+            <a href="{{ $dashboard_url }}"><img src="/logos/logo.gif" /></a>
         </div>
         <div class="card">
             <div class="card-body login-card-body">
@@ -75,7 +76,7 @@
                             </a>
                         </div>
                         <div class="col-4">
-                            <button type="submit" class="btn btn-primary btn-block btn-flat">
+                            <button type="submit" class="btn btn-mypharma btn-block btn-flat">
                                 {{ __('adminlte::adminlte.sign_in') }}
                             </button>
                         </div>

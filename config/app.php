@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Sistema Veiculos'),
+    'name' => env('APP_NAME', 'MYPHARMA 2GO'),
 
     /*
     |--------------------------------------------------------------------------
@@ -178,6 +178,8 @@ return [
         Yajra\Datatables\DatatablesServiceProvider::class,
         App\Providers\HelperServiceProvider::class,
         Zizaco\Entrust\EntrustServiceProvider::class,
+        Nwidart\Modules\LaravelModulesServiceProvider::class,
+
 
     ],
 
@@ -233,6 +235,7 @@ return [
         'Form' => 'Collective\Html\FormFacade',
         'Html' => 'Collective\Html\HtmlFacade',
         'Entrust'   => Zizaco\Entrust\EntrustFacade::class,
+        'Module' => Nwidart\Modules\Facades\Modules::class,
 
     ],
 
